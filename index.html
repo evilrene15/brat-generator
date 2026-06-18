@@ -2,21 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-<meta name="description" content="Brat Generator by ziyad_studio" />
-<meta name="keywords" content="Brat Generator, ziyad_studio" />
+<meta name="description" content="Sticker Generator by Ziyad Studio" />
+<meta name="keywords" content="Sticker Generator, Ziyad Studio" />
 <meta name="robots" content="index, follow" />
-<meta property="og:site_name" content="Brat Generator — ziyad_studio" />
+<meta property="og:site_name" content="Sticker Generator — Ziyad Studio" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Brat Generator — ziyad_studio" />
-<meta property="og:description" content="Brat Generator by ziyad_studio" />
+<meta property="og:title" content="Sticker Generator — Ziyad Studio" />
+<meta property="og:description" content="Sticker Generator by Ziyad Studio" />
 <meta name="MobileOptimized" content="width" />
 <meta name="HandheldFriendly" content="true" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="icon" href="sites/g/files/g2000017981/files/favicon_96.jpg" type="image/jpeg" />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%23000000%22/><text x=%2250%22 y=%2265%22 font-size=%2250%22 font-family=%22sans-serif%22 font-weight=%22bold%22 fill=%22%23ffffff%22 text-anchor=%22middle%22>ZS</text></svg>">
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-    <title>Brat Generator — ziyad_studio</title>
-
+    <link rel="preload" href="sites/g/files/g2000017981/files/2024-03/arial_narrow-webfont.woff.html" as="font" type="font/woff" crossorigin="anonymous">
+    <title>Sticker Generator — Ziyad Studio</title>
   </head>
   <body class="page-node-606 page-node-type-page layout-no-sidebars path-frontpage">
         <a href="index.html#main-content" class="visually-hidden focusable skip-link">
@@ -115,10 +115,10 @@
 
         <div class="content">
 
-<article data-history-node-id="606" about="/bratgenerator-new-site" typeof="schema:WebPage" class="node node--type-page node--view-mode-full clearfix">
+<article data-history-node-id="606" about="/sticker-generator" typeof="schema:WebPage" class="node node--type-page node--view-mode-full clearfix">
   <header>
 
-            <span property="schema:name" content="Bratgenerator new site" class="rdf-meta hidden"></span>
+            <span property="schema:name" content="Sticker Generator — Ziyad Studio" class="rdf-meta hidden"></span>
 
       </header>
   <div class="node__content clearfix">
@@ -177,12 +177,18 @@
         position: relative;
         display: flex;
         width: 100%;
-        min-height: 60vh;
+        max-width: 500px;
+        aspect-ratio: 1 / 1;
         height: auto;
-        padding: 40px 20px;
+        margin: 20px auto;
+        padding: 0;
         font-size: 0px;
         align-items: center;
         justify-content: center;
+        background-color: #ffffff;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+        border: 1px solid #eaeaea;
+        box-sizing: border-box;
     }
 
     #textInput {
@@ -209,12 +215,12 @@
         font-weight: 500;
         font-family: arial_narrowregular, "Arial Narrow", sans-serif;
         font-size: 100px;
-        max-width: 500px;
+        max-width: 100%;
         width: 100%;
+        height: 100%;
         text-align: justify;
         text-align-last: justify;
-        padding: 20px;
-        height: 350px;
+        padding: 40px 30px 30px 30px;
         box-sizing: border-box;
     }
 
@@ -305,14 +311,11 @@
     /* === Tablet & small laptops (max 1024px) === */
     @media only screen and (max-width: 1024px) {
         #memeContainer {
-            min-height: 50vh;
-            padding: 30px 16px;
+            padding: 0;
         }
 
         #textOverlay {
-            max-width: 420px;
-            height: 300px;
-            padding: 16px;
+            padding: 32px 24px 24px 24px;
         }
 
         #textInput {
@@ -328,14 +331,11 @@
     /* === Mobile portrait (max 768px) === */
     @media only screen and (max-width: 768px) {
         #memeContainer {
-            min-height: 45vh;
-            padding: 24px 12px;
+            padding: 0;
         }
 
         #textOverlay {
-            max-width: 340px;
-            height: 260px;
-            padding: 14px;
+            padding: 24px 18px 18px 18px;
         }
 
         #textInput {
@@ -367,14 +367,11 @@
     /* === Small phones (max 480px) === */
     @media only screen and (max-width: 480px) {
         #memeContainer {
-            min-height: 40vh;
-            padding: 20px 10px;
+            padding: 0;
         }
 
         #textOverlay {
-            max-width: 280px;
-            height: 220px;
-            padding: 10px;
+            padding: 18px 14px 14px 14px;
         }
 
         #textInput {
@@ -401,13 +398,7 @@
     /* === Landscape on mobile/tablet === */
     @media only screen and (max-width: 1024px) and (orientation: landscape) {
         #memeContainer {
-            min-height: 70vh;
-            padding: 20px 40px;
-        }
-
-        #textOverlay {
-            max-width: 400px;
-            height: 250px;
+            padding: 0;
         }
 
         #textInput {
@@ -418,14 +409,11 @@
     /* === Very small landscape (phones) === */
     @media only screen and (max-height: 500px) and (orientation: landscape) {
         #memeContainer {
-            min-height: 80vh;
-            padding: 10px 20px;
+            padding: 0;
         }
 
         #textOverlay {
-            max-width: 320px;
-            height: 200px;
-            padding: 10px;
+            padding: 14px 12px 12px 12px;
         }
 
         #textInput {
@@ -443,64 +431,17 @@
 
 
 <!-- Main Content -->
-<h1 class="-is-visually-hidden">Brat Generator</h1>
+<h1 class="-is-visually-hidden">Sticker Generator — Ziyad Studio</h1>
 <div id="memeContainer">
     <div id="textOverlay"></div>
 </div>
 <input type="text" id="textInput" value="tulis di sini">
-<div id="screenshot-blurb">Take a Screenshot to Save!</div>
+<div id="screenshot-blurb" style="display: none;">Take a Screenshot to Save!</div>
+<button id="btnDownload">Download PNG (2048x2048)</button>
 
 <!-- Footer -->
 <div class="footerWrapper">
-    <div class="copyrightWrapper">© 2026 ziyad_studio</div>
-    <div class="socialWrapper active">
-        <ul class="socials">
-            <li class="fs-fb">
-                <a data-track="facebook" href="https://www.facebook.com/CharliXCX/" target="_blank">
-                    <span class="-is-visually-hidden">Facebook</span><i class="fab fa-facebook-f"
-                        aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="fs-tw">
-                <a data-track="twitter" href="https://twitter.com/charli_xcx" target="_blank">
-                    <span class="-is-visually-hidden">X</span><i class="fab fa-x-twitter" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="fs-ig">
-                <a data-track="instagram" href="https://www.instagram.com/charli_xcx/" target="_blank">
-                    <span class="-is-visually-hidden">Instagram</span><i class="fab fa-instagram"
-                        aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="fs-yt">
-                <a data-track="youtube" href="https://www.youtube.com/@officialcharlixcx" target="_blank">
-                    <span class="-is-visually-hidden">YouTube</span><i class="fab fa-youtube" aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="fs-sp">
-                <a data-track="spotify" href="https://open.spotify.com/artist/25uiPmTg16RbhZWAqwLBy5" target="_blank">
-                    <span class="-is-visually-hidden">Spotify</span><i class="fa-brands fa-spotify"
-                        aria-hidden="true"></i>
-                </a>
-            </li>
-            <li class="fs-ap">
-                <a custom-link-name="Apple(footer)" href="https://music.apple.com/us/artist/charli-xcx/432942256"
-                    target="_blank">
-                    <span class="-is-visually-hidden">Apple Music</span><i class="fa-brands fa-apple"></i>
-                </a>
-            </li>
-            <li class="fs-sc">
-                <a data-track="soundcloud" href="https://soundcloud.com/charlixcx" target="_blank">
-                    <span class="-is-visually-hidden">SoundCloud</span><i class="fa-brands fa-soundcloud"></i>
-                </a>
-            </li>
-            <li class="fs-tk">
-                <a data-track="tiktok" href="https://www.tiktok.com/@charlixcx" target="_blank">
-                    <span class="-is-visually-hidden">TikTok</span><i class="fa-brands fa-tiktok"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
+    <div class="copyrightWrapper">© 2026 Ziyad Studio</div>
 </div>
 
 <!-- textFit Library (v2.3.1, cleaned) -->
@@ -706,6 +647,7 @@
 <script>
     var textInput = document.getElementById('textInput');
     var textOverlay = document.getElementById('textOverlay');
+    var btnDownload = document.getElementById('btnDownload');
 
     function getMaxFontSize() {
         var w = window.innerWidth;
@@ -730,6 +672,155 @@
     });
 
     window.onload = fitText;
+
+    // Export system using Canvas 2D API with DOM line detection to ensure 100% layout and typography sync
+    function exportSticker() {
+        btnDownload.innerText = "Downloading...";
+        btnDownload.disabled = true;
+
+        try {
+            const memeContainer = document.getElementById('memeContainer');
+            const textOverlay = document.getElementById('textOverlay');
+            const span = document.querySelector('#textOverlay span.textFitted');
+            if (!memeContainer || !textOverlay || !span) return;
+
+            // 1. Wrap each word in a span to get its exact browser-rendered layout position
+            const paragraphs = span.innerText.split('\n');
+            const originalHTML = span.innerHTML;
+            
+            let spanHTML = '';
+            paragraphs.forEach((p, pIdx) => {
+                const pWords = p.split(' ');
+                const pSpans = pWords.map(w => `<span>${w}</span>`).join(' ');
+                spanHTML += `<span class="paragraph-wrap">${pSpans}</span>`;
+                if (pIdx < paragraphs.length - 1) {
+                    spanHTML += '<br/>';
+                }
+            });
+            span.innerHTML = spanHTML;
+
+            const childSpans = span.querySelectorAll('.paragraph-wrap span');
+
+            // 2. Calculate coordinates and scale factor (from screen to 2048x2048)
+            const previewWidth = memeContainer.offsetWidth;
+            const scale = 2048 / previewWidth;
+
+            const containerRect = memeContainer.getBoundingClientRect();
+            const overlayStyle = window.getComputedStyle(textOverlay);
+            const computedStyle = window.getComputedStyle(span);
+
+            const fontSize = parseFloat(computedStyle.fontSize);
+            const fontWeight = computedStyle.fontWeight || '500';
+            const fontStyle = computedStyle.fontStyle || 'normal';
+            const letterSpacing = computedStyle.letterSpacing;
+            
+            const canvasFontSize = fontSize * scale;
+
+            const bgColor = window.getComputedStyle(memeContainer).backgroundColor || '#ffffff';
+            const textColor = overlayStyle.color || '#000000';
+
+            // Scale the CSS blur filter
+            const filterText = computedStyle.filter;
+            let canvasFilter = 'none';
+            if (filterText && filterText !== 'none') {
+                canvasFilter = filterText.replace(/blur\(([\d.]+)px\)/g, (match, p1) => {
+                    return `blur(${parseFloat(p1) * scale}px)`;
+                });
+            }
+
+            // 3. Extract word positions directly from the browser layout engine
+            const wordsData = [];
+            childSpans.forEach(child => {
+                const wordText = child.innerText;
+                if (!wordText) return;
+                
+                const childRect = child.getBoundingClientRect();
+                const relativeX = childRect.left - containerRect.left;
+                const relativeY = childRect.top - containerRect.top;
+                
+                wordsData.push({
+                    text: wordText,
+                    x: relativeX * scale,
+                    y: relativeY * scale
+                });
+            });
+
+            // Restore screen preview DOM immediately after reading positions
+            span.innerHTML = originalHTML;
+
+            // 4. Draw on the output canvas
+            const canvas = document.createElement('canvas');
+            canvas.width = 2048;
+            canvas.height = 2048;
+            const ctx = canvas.getContext('2d');
+
+            // Draw solid background
+            ctx.filter = 'none';
+            ctx.fillStyle = bgColor;
+            ctx.fillRect(0, 0, 2048, 2048);
+
+            // Configure text styles
+            ctx.fillStyle = textColor;
+            ctx.font = `${fontStyle} ${fontWeight} ${canvasFontSize}px arial_narrowregular, "Arial Narrow", sans-serif`;
+            ctx.textBaseline = 'top';
+            
+            const parsedLetterSpacing = parseFloat(letterSpacing);
+            if (!isNaN(parsedLetterSpacing) && parsedLetterSpacing !== 0) {
+                ctx.letterSpacing = `${parsedLetterSpacing * scale}px`;
+            }
+
+            // Apply canvas filter safely
+            try {
+                ctx.filter = canvasFilter;
+            } catch (e) {
+                console.warn("Canvas filter not supported on this browser:", e);
+            }
+
+            // Draw each word at its exact relative viewport coordinates (copied from preview)
+            wordsData.forEach(word => {
+                ctx.fillText(word.text, word.x, word.y);
+            });
+
+            // Reset canvas filter
+            ctx.filter = 'none';
+
+            // 5. Download Trigger via Synchronous Blob URL (avoids string length limits & memory issues of Data URLs)
+            const pngUrl = canvas.toDataURL('image/png', 1.0);
+            
+            // Convert to Blob synchronously
+            const base64Data = pngUrl.split(',')[1];
+            const byteCharacters = atob(base64Data);
+            const byteNumbers = new Array(byteCharacters.length);
+            for (let i = 0; i < byteCharacters.length; i++) {
+                byteNumbers[i] = byteCharacters.charCodeAt(i);
+            }
+            const byteArray = new Uint8Array(byteNumbers);
+            const blob = new Blob([byteArray], { type: 'image/png' });
+            
+            // Create Blob URL
+            const blobUrl = URL.createObjectURL(blob);
+            const link = document.createElement('a');
+            link.download = 'ziyad_studio_sticker.png';
+            link.href = blobUrl;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            // Revoke after download is triggered
+            setTimeout(() => {
+                URL.revokeObjectURL(blobUrl);
+            }, 100);
+
+        } catch (err) {
+            console.error("Proses ekspor gagal:", err);
+            alert("Terjadi kesalahan saat mengekspor gambar stiker.");
+        } finally {
+            btnDownload.innerText = "Download PNG (2048x2048)";
+            btnDownload.disabled = false;
+        }
+    }
+
+    btnDownload.addEventListener('click', exportSticker);
 </script>
 
 <!-- Additional Overrides -->
@@ -740,6 +831,29 @@
 
     #toolbar-bar {
         display: none !important;
+    }
+
+    #btnDownload {
+        margin: 20px auto;
+        padding: 14px 28px;
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        display: block;
+        font-family: Arial, sans-serif;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: all 0.2s ease-in-out;
+    }
+    #btnDownload:hover {
+        background-color: #222222;
+        transform: translateY(-1px);
+    }
+    #btnDownload:active {
+        transform: translateY(1px);
     }
 </style></div>
 
