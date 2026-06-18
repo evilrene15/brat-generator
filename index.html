@@ -220,7 +220,7 @@
         height: 100%;
         text-align: justify;
         text-align-last: justify;
-        padding: 40px 30px 30px 30px;
+        padding: 30px 25px 25px 25px;
         box-sizing: border-box;
     }
 
@@ -315,7 +315,7 @@
         }
 
         #textOverlay {
-            padding: 32px 24px 24px 24px;
+            padding: 24px 20px 20px 20px;
         }
 
         #textInput {
@@ -335,7 +335,7 @@
         }
 
         #textOverlay {
-            padding: 24px 18px 18px 18px;
+            padding: 18px 15px 15px 15px;
         }
 
         #textInput {
@@ -371,7 +371,7 @@
         }
 
         #textOverlay {
-            padding: 18px 14px 14px 14px;
+            padding: 14px 10px 10px 10px;
         }
 
         #textInput {
@@ -413,7 +413,7 @@
         }
 
         #textOverlay {
-            padding: 14px 12px 12px 12px;
+            padding: 12px 10px 10px 10px;
         }
 
         #textInput {
@@ -649,18 +649,10 @@
     var textOverlay = document.getElementById('textOverlay');
     var btnDownload = document.getElementById('btnDownload');
 
-    function getMaxFontSize() {
-        var w = window.innerWidth;
-        if (w <= 480) return 80;
-        if (w <= 768) return 110;
-        if (w <= 1024) return 140;
-        return 170;
-    }
-
     function fitText() {
         var text = textInput.value;
         textOverlay.innerText = text;
-        textFit(textOverlay, { maxFontSize: getMaxFontSize() });
+        textFit(textOverlay, { maxFontSize: 260 });
     }
 
     textInput.addEventListener('input', fitText);
